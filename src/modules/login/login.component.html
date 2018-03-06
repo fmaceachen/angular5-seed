@@ -1,0 +1,21 @@
+<div class="login">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+    <mat-card class="panel">
+      <mat-grid-list cols="1" rowHeight="3:1">
+        <mat-grid-tile>
+          <mat-form-field>
+            <input matInput placeholder="Username" formControlName="username">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field>
+            <input matInput placeholder="Password" formControlName="password">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button type="submit" mat-button>Signin</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+  </form>
+</div>

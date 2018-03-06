@@ -1,6 +1,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "~environments/*": ["environments/*"],
+      "~auth/*": ["modules/auth/*"],
+      "~main/*": ["modules/main/*"],
+      "~login/*": ["modules/login/*"],
+      "~dashoard/*": ["modules/dashboard/*"],
+      "~store/*": ["modules/store/*"]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
